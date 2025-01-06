@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>New Game</h1>
+  <ul>
+    <% @letters.each do |letter| %>
+      <li><%= letter %></li>
+    <% end %>
+  </ul>
+
+  <form action="/score" method="post" data-turbo="false">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :letters, @letters.join(" ") %> <!-- Pass the grid to the controller -->
+    <input type="text" name="word" placeholder="What is the longest word you can find?">
+    <button type="submit">Play</button>
+  </form>
+</div>

@@ -13,3 +13,84 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: left;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  margin-bottom: 2em !important;
+}
+
+ul li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+form input[type="text"] {
+  font-size: 1rem;
+  padding: 8px 12px;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+
+form button {
+  font-size: 1rem;
+  padding: 8px 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 0 5px 5px 0;
+  color: black;
+  cursor: pointer;
+  margin-left: -1px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
